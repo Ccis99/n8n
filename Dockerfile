@@ -5,7 +5,7 @@ FROM n8nio/n8n:latest
 USER root
 
 # Use the 'apk' package manager (from Alpine Linux) to install ffmpeg
-RUN apk add --no-cache ffmpeg
+RUN apk add --no-cache ffmpeg wget
 
 # Switch back to the default 'node' user for security
 USER node
